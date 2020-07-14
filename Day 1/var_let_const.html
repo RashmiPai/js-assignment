@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Write the difference between var , let , const with code examples. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAR,LET,CONST</title>
+    <h1>Difference between var, let, const.</h1>
+</head>
+<body>
+    <script>
+        // Variables cannot be changed when 'const' is used.
+        const fruits = ["mango","apple"];
+        console.log(fruits); // The two elements of the array are displayed.
+        // The content of fruits cannot be changed.
+        // fruits = ["banana"]; will show an error
+        // New elements can be added to the fruits array by,
+        fruits.push("banana"); //The element "banana" is pushed i.e, added in the array now.
+        console.log(fruits); //The three elements of the array are displayed now. 
+        // New elements can be added but existing elements cannot be changed if 'const' is used.
+        // 'var' has global scope whereas 'let' has local scope.
+        var name="abc";
+        console.log("Before : ",name); //Displays "abc"
+        {
+            let name="xyz";
+            console.log("Using 'let' : ",name); //Displays "xyz"
+        }
+        console.log("After : ",name); //Displays "abc"
+        /* The variable 'name' is declared as 'var' so it global scope and can be used anywhere in the program and will have the same 
+        value thoughout the program. The variable 'name' declared as 'let' has only local scope therefore it can only be used within {} */
+        /* 'var' cannot be used everywhere in the program because it may cause alot of confucions whle debugging the program speccially
+        in case the variable names are the same as shown the above example. */
+    </script>
+</body>
+</html>
