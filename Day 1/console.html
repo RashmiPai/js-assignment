@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Expalin the various methods in console function. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSOLE</title>
+    <h1>Various methods in console function</h1>
+</head>
+<body>
+    <script>
+        console.log("Hello Javascript"); //Used to print strings.
+        console.log(document); //Displays all the code of the page is shown.
+        console.log(document.head); //Displays only the head part of the document.
+        console.log(document.body); //Displays only the body part of the document.
+        // console can also be used to display error and warnings.
+        console.error("An ERROR occured!!"); //To display an error.
+        // An error may also occur when when a source file is added to the script but the file doesn't exist.
+        console.warn("This is a warning!"); //To display a warning.
+        // multiple objects can be displayed using a single console function
+        var a=10;
+        var b=20;
+        var c=30; 
+        console.log("Displaying multiple objects : ",a,b,c); //All the three objects a,b,c are displayed. 
+        // A table of objects can also be displayed using console.
+        console.log("Below shown is the table of the objects with their index values i.e, a,b,c : ")
+        console.table({a,b,c});
+        // CSS code can used in javascript for styling purposes i.e, font color.
+        console.log("%c Custom Data","color:red;"); //"Custom Data" is displayed in red color.
+        // Time taken for the execution of a block of code can also be determined using console.
+        console.time("Time taken:"); //Starting of the block of code
+        /* some code
+        some code
+        some code */
+        console.timeEnd("Time taken:"); //End of the block of code, time taken is displayed here.
+    </script>
+</body>
+</html>
